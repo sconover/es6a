@@ -1,12 +1,12 @@
 <html>
-  <script type="module">
-    const TEST_MODE = window.location.search === "?test";
-    import { renderHello } from "./first.js";
+    <script type="module">
+        const TEST_MODE = window.location.search === "?test"
+        import { renderHello } from "./first.js"
 
-    if (TEST_MODE) {
-      import("./test.js").then((tests) => tests.run(document.body));
-    } else {
-      renderHello(document.body);
-    }
-  </script>
+        if (TEST_MODE) {
+            import("./test.js").then((tests) => tests.run(document.body))
+        } else {
+            renderHello(document.body)
+        }
+    </script>
 </html>
